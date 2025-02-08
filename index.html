@@ -134,7 +134,7 @@
         <p>“Live, laugh, love-- everything you need in Majorca.”</p>
         
         <h3>About Your Destination</h3>
-        <h4>Size</h4>>
+        <h4>Size</h4>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M17 3l4 4l-14 14l-4 -4z" />
@@ -168,7 +168,46 @@
             <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
         </svg>
         <p>Population: 923,608</p>
-          
+        
+        <h3>Contact Us</h3>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+            <label for="first-name">First Name<span class="required">*</span></label>
+            <input type="text" name="first-name" id="first-name" required>
+            <label for="last-name">Last Name<span class="required">*</span></label>
+            <input type="text" name="last-name" id="last-name" required>
+            <fieldset>
+                <legend>Contact Method</legend>
+                <input type="radio" name="contact-email" id="contact-email" checked>
+                <label for="contact-email">Email</label>
+                <input type="radio" name="contact-text" id="contact-text">
+                <label for="contact-text">Text</label> 
+                <input type="radio" name="contact-phone" id="contact-phone">
+                <label for="contact-phone">Phone</label> 
+            </fieldset>
+            <label for="email-address">Email Address<span class="required">*</span></label>
+            <input type="email" name="email-address" id="email-address" required>
+            <label for="phone-number">Phone Number<span class="required">*</span></label>
+            <input type="tel" name="phone-number" id="phone-number" required>
+            <label for="destinations">Destination</label>
+			<select name="destinations" id="destinations">
+				<option value="barcelona">Barcelona</option>
+				<option value="granada">Granada</option>
+                <option value="ibiza">Ibiza</option>
+                <option value="madrid">Madrid</option>
+                <option value="majorca">Majorca</option>
+                <option value="seville">Seville</option>
+                <option value="tenerife">Tenerife</option>
+                <option value="valencia">Valencia</option>
+            </select>
+            <label for="travel-time">Travel Time</label>
+			<select name="travel-time" id="travel-time">
+				<option value="fall">Fall</option>
+				<option value="winter">Winter</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="flex">Flexible</option>
+            </select>
+        </form>
     </main>
     <footer>
         <p>Copyright 2021 Wunderlust</p>
