@@ -1,0 +1,644 @@
+/* AUTHOR: MARIAH GRIFFIN*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*MOLLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Molle&display=swap');
+/*MONTSERRAT FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*COLORS*/
+    --yellow: #f6d64a;
+    --teal: #55bcd5;
+    --purple: #9b26b0;
+    --blue: #499bd2;
+    --dark-gray: #010101;
+    --light-gray: #eaeaea;
+    --white: #ffffff;
+    --black: #000000;
+
+    /*FONTS*/
+    --molle: 'Molle', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+/* SKIP LINK*/
+#skip{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+#skip:focus{
+	position: static;
+	width: auto;
+	height: auto;
+}
+body{
+    font-family: var(--montserrat);
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.6;
+}
+/*MENU*/
+  #toggle {
+    display: none;
+  }
+  /*NAV BUTTON*/
+  label[for="toggle"] {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 250px;
+    height: 30px;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* NAV MENU */
+  nav ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background: var(--teal);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  nav ul li {
+    border-bottom: 1px solid var(--black);
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: var(--black);
+  }
+  
+  nav ul li a:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+  #toggle:checked + label + ul {
+    display: block;
+  }
+/* MENU WHEN CLICKED */
+  #toggle:checked + label {
+    background: var(--black);
+    color: var(--white);
+    width: 100%;
+  }
+
+/* STYLES*/
+
+#plan{
+    background-color: var(--yellow);
+}
+#testimonials{
+    background-color: var(--white);
+}
+#about{
+    background-color: var(--blue);
+}
+#contact{
+    background-color: var(--white);
+}
+header{
+    background-image: linear-gradient(#55bcd5, #fff,#fff 160%);
+}
+h1, h2, h3{
+    font-family: var(--molle);
+}
+h1{
+    font-size: 3em;
+}
+h2, h3{
+    font-size: 2.5em;
+}
+header p{
+    font-size: 32px;
+}
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
+
+#intro h2, #intro p, header{
+    padding: 15px 50px;
+}
+#logo{
+    position:relative;
+    left: -50px;
+}
+#intro p{
+    padding-bottom: 15px;
+    line-height: 2;
+}
+#img-grid img{
+    width: 100%;
+    padding: 0 0 15px;
+}
+#plan{
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+#plan section{
+    display: block;
+    position: relative;
+    left: 125px;
+    background-color: var(--teal);
+    margin: 15px;
+    padding: 25px 0 25px 0;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thick;
+    border-color: var(--white);
+}
+#plan h4{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 15px;
+}
+#plan img{
+    width: 50%;
+    height: auto;
+}
+#testimonials{
+    padding: 30px 50px;
+}
+#testimonials section{
+    text-align: center;
+}
+#testimonials img{
+    width: 50%;
+    padding: 15px;
+}
+#testimonials h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+#testimonials q{
+    font-style: italic;
+}
+#about{
+    padding: 15px 50px;
+}
+#about h4{
+    font-weight: bold;
+    text-transform: uppercase;'
+    font-size: 2em;
+}
+#about section{
+    display: inline-block;
+    padding: 25px 50px;
+    text-align: center;
+}
+#about p, #about img, #about h4{
+    text-align: center;
+}
+#contact{
+    padding: 25px 50px;
+}
+#contact h3{
+    font-size: 2em;
+}
+.form-required{
+    font-family: var(--montserrat);
+    font-size: 24px;
+    font-style: italic;
+}
+#names label, #nums legend, #nums label, #selects label{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+#contact form, #contact label{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#names input, #nums input[type="email"], #nums input[type="tel"], #destination, #travelTime{
+    width: 100%;
+    height: 60px;
+    font-family: var(--montserrat);
+    font-size: 16px;
+    padding-left: 10px;
+    border-color: var(--purple);
+    border-style: solid;
+    border-width: 3.5px;
+}
+#names label{
+    padding-top: 10px;
+}
+input[type="radio"] {
+    appearance: none; 
+    width: 5em; 
+    height: 5em;
+    border: 3.5px solid var(--purple);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+  
+input[type="radio"]:checked::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.radio-label{
+    text-transform: none;
+    font-weight: normal;
+}
+#nums span{
+    display: inline-block;
+    padding-bottom: 5px;
+}
+#nums legend{
+    padding-top: 15px;
+}
+#mySubmit{
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    background-color: var(--purple);
+    color: var(--white);
+    border: 3.5px solid var(--purple);
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+footer{
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 25px;
+}
+footer a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: var(--black);
+}
+footer p{
+    margin-bottom: 20px;
+}
+/*MEDIUM SCREEN*/
+@media screen and (min-width: 768px){
+    /*HEADER*/
+    header{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+    }
+    #logo{
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        display: flex;
+        position: relative;
+        left: 0px;
+    }
+    nav{
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    header h1{
+        grid-column: 2/5;
+        grid-row: 1/2;
+        display: flex;
+    }
+    header p{
+        grid-column: 2/5;
+        grid-row: 2/3;
+        display: flex;
+        max-width: 720px;
+    }
+    #menu-toggle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu-toggle ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #menu-toggle ul li{
+        display: inline;
+    }
+    /*REMOVE MENU BUTTON*/
+    label[for="toggle"]{
+        display: none;
+    }
+    nav ul{
+        display: flex; 
+        position: static; 
+        background: none;
+        justify-content: center; 
+        width: 100%;
+        padding: 10px 0;
+    }
+    nav ul li{
+        border-bottom: none; /
+        margin: 0 15px; 
+    }
+    /*LIST ITEM BUTTONS*/
+    nav ul li a{
+        background-color: var(--white);
+        border: 1px var(--light-gray) solid;
+        padding: 10px 15px;
+        margin: 10px;
+        height: 30px;
+        font-size: 18px;
+        color: var(--black);
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav ul li a:hover{
+        background: var(--yellow);
+        color: var(--black);
+    }
+    /*IMAGES*/
+    #img-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 20px; 
+        padding: 10px 50px;
+    }
+    #img-grid img{
+        width: 100%; 
+        height: auto; 
+    }
+    #img-grid picture{
+        grid-column: span 2; 
+        width: 100%;
+    }
+    /*PLAN YOUR TRIP SECTION*/
+    #plan div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    #plan section{
+        width: 90%;
+        margin: 10px 15px;
+        height: auto;
+        position: relative;
+        left: 0px;
+        font-size: 18px;
+    }
+    #plan h3{
+        text-align: left;
+        padding-left: 40px;
+    }
+    /*TESTIMONIALS*/
+    #testimonials img{
+        width: 50%;
+    }
+    #testimonials div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    #testimonials h4{
+        font-size: 1em;
+    }
+    #testimonials q{
+        font-size: 1em;
+    }
+    /*DESTINATIONS*/
+    #about div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #about section{
+        width: 50%;
+        padding: 10px;
+    }
+    #nums fieldset{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        max-width: 800px;
+    }
+    #names input, #nums input[type="email"], #nums input[type="tel"], #destination, #travelTime{
+        width: 100%;
+    }
+    #mySubmit{
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    footer{
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 10px 40px; 
+    }
+    footer a{
+        display: flex;
+    }
+    footer p{
+        margin: 0; 
+    }
+}
+/*LARGE SCREENS*/
+@media screen and (min-width: 1025px){
+    /*HEADER*/
+    header{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        max-width: 100%;
+        padding-top: 50px;
+    }
+    header p{
+        max-width: none;
+        font-size: 24px;
+    }
+    #logo{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    #menu-toggle{
+        max-width: 980px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    /*INTRO*/
+    #intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto 1fr; 
+        gap: 0;
+        margin: 0 auto;
+        padding-left: 50px;
+    }
+    #intro h2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    #intro p{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    #img-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    #img-grid img:nth-child(1), #img-grid img:nth-child(2){
+        width: 100%;
+        height: auto;
+    }
+    #img-grid picture {
+        grid-column: span 2;
+        width: 100%;
+        height: auto;
+    }
+    #img-grid picture img{
+        width: 100%;
+        height: auto;
+    }
+    /*PLAN YOUR TRIP*/
+    #plan div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #testimonials div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+    /*DESTINATIONS*/
+    #about div{
+        padding: 0 250px;
+    }
+    /*CONTACT US*/
+    #contact form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #names{
+        grid-column: 1/2;
+        grid-row: auto;
+        padding-right: 30px; 
+        min-width: 500px;
+    }
+    #nums{
+        grid-column: 2/3;
+        grid-row: auto;
+        min-width: 500px;
+    }
+    #selects{
+        grid-column: 3/4;
+        grid-row: auto;
+        padding-left: 30px; 
+        min-width: 500px;
+    }
+}
